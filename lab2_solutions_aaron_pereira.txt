@@ -1,0 +1,248 @@
+ALP@DESKTOP-G4UOH8O MINGW64 ~
+$ cd ironhack_2022
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022
+$ ls
+Unit01/  ms_excel_prework/  python_prework/  statistics_prework/
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022
+$ cd Unit01
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01
+$ ls
+Day_01/
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01
+$ cd Day_01
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/Day_01
+$ ls
+ 1.01_activities.ipynb                   git-cheat-sheet-education.pdf
+'1.02a Python Review.ipynb'              lab_bash_solutions_aaron_pereira.ipynb
+'1.02a_Python_Review(1)_ignacio.ipynb'
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/Day_01
+$ cd ..
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01
+$ git clone https://github.com/aaronpereira92/alpironhack.git
+Cloning into 'alpironhack'...
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 11 (delta 1), reused 7 (delta 1), pack-reused 0
+Receiving objects: 100% (11/11), done.
+Resolving deltas: 100% (1/1), done.
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01
+$ ls
+Day_01/  alpironhack/
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01
+$ rm alpironhack
+rm: cannot remove 'alpironhack': Is a directory
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01
+$ rmdir alpironhack
+rmdir: failed to remove 'alpironhack': Directory not empty
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01
+$ rm -rf alpironhack
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01
+$ ls
+Day_01/
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01
+$ git clone https://github.com/aaronpereira92/IronAaron.git
+Cloning into 'IronAaron'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01
+$ ls
+Day_01/  IronAaron/
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01
+$ cd IronAaron
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronAaron (main)
+$ touch funfact.txt
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronAaron (main)
+$ ls
+README.md  funfact.txt
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronAaron (main)
+$ echo "I like football" > funfact.txt
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronAaron (main)
+$ cat funfact.txt
+I like football
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronAaron (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        funfact.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronAaron (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronAaron (main)
+$ git add funfact.txt
+warning: LF will be replaced by CRLF in funfact.txt.
+The file will have its original line endings in your working directory
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronAaron (main)
+$ git commit -m "This is my fun fact text file"
+[main 56a86d7] This is my fun fact text file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 funfact.txt
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronAaron (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronAaron (main)
+$ git log
+commit 56a86d7d988f052269a37950e6e70ebf62431afa (HEAD -> main)
+Author: aaronpereira92 <aaron.pereira92@gmail.com>
+Date:   Mon Feb 14 19:36:28 2022 +0100
+
+    This is my fun fact text file
+
+commit 78018890f3e7160ab6d0fe71a229ea89e985148b (origin/main, origin/HEAD)
+Author: Aaron Pereira <63967678+aaronpereira92@users.noreply.github.com>
+Date:   Mon Feb 14 19:24:39 2022 +0100
+
+    Initial commit
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronAaron (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 310 bytes | 310.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/aaronpereira92/IronAaron.git
+   7801889..56a86d7  main -> main
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronAaron (main)
+$ git log
+commit 56a86d7d988f052269a37950e6e70ebf62431afa (HEAD -> main, origin/main, origin/HEAD)
+Author: aaronpereira92 <aaron.pereira92@gmail.com>
+Date:   Mon Feb 14 19:36:28 2022 +0100
+
+    This is my fun fact text file
+
+commit 78018890f3e7160ab6d0fe71a229ea89e985148b
+Author: Aaron Pereira <63967678+aaronpereira92@users.noreply.github.com>
+Date:   Mon Feb 14 19:24:39 2022 +0100
+
+    Initial commit
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01
+$ clone https://github.com/aaronpereira92/IronDevi.git
+bash: clone: command not found
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01
+$ git clone https://github.com/aaronpereira92/IronDevi.git
+Cloning into 'IronDevi'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01
+$ ls
+Day_01/  IronAaron/  IronDevi/
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01
+$ cd IronDevi
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronDevi (main)
+$ ls
+README.md  about.txt
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronDevi (main)
+$ git branch --help
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronDevi (main)
+$ git branch classmate
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronDevi (main)
+$ git checkout classmate
+Switched to branch 'classmate'
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronDevi (classmate)
+$ git branch
+* classmate
+  main
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronDevi (classmate)
+$ touch aaron.txt
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronDevi (classmate)
+$ echo "I enrolled Ironhack's Data Analytics bootcamp because I wanna be a Data Analyst" > aaron.txt
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronDevi (classmate)
+$ cat aaron.txt
+I enrolled Ironhack's Data Analytics bootcamp because I wanna be a Data Analyst
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronDevi (classmate)
+$ git add aaron.txt
+warning: LF will be replaced by CRLF in aaron.txt.
+The file will have its original line endings in your working directory
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronDevi (classmate)
+$ git status
+On branch classmate
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   aaron.txt
+
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronDevi (classmate)
+$ git commit -m "This aaron.txt is now in the new branch classmate"
+[classmate 0bd9fc9] This aaron.txt is now in the new branch classmate
+ 1 file changed, 1 insertion(+)
+ create mode 100644 aaron.txt
+
+ALP@DESKTOP-G4UOH8O MINGW64 ~/ironhack_2022/Unit01/IronDevi (classmate)
+$ git push --set-upstream origin classmate
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 403 bytes | 403.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'classmate' on GitHub by visiting:
+remote:      https://github.com/aaronpereira92/IronDevi/pull/new/classmate
+remote:
+To https://github.com/aaronpereira92/IronDevi.git
+ * [new branch]      classmate -> classmate
+branch 'classmate' set up to track 'origin/classmate'.
+
+
+
+
+
